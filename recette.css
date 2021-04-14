@@ -1,0 +1,143 @@
+        * {
+                overflow: auto; /* important à mettre au debut permet d'ajuster automatiquement des div si le texte dépasse */
+        }
+            body{
+                background-color: #8BA1BB;
+                font-family: Arial;
+                margin: 0;
+
+            }
+            div.contenu{
+                background-color: white;
+                margin: 60px 10% 80px 10%;
+                padding: 0px 30px 30px 30px;
+                min-width: 350px;
+                box-shadow: 0px 0px 8px 8px rgba(0,0,0,0.1);
+                overflow: visible;
+            
+            }
+            h1{
+                text-align: center;
+                margin-bottom: 12;
+                margin-top: 10;
+            }            
+            p.categorie{
+                background-color: black;
+                color: white;
+                display: inline-block;
+                margin-top: -15px;
+                padding: 8px 18px;
+                margin-bottom: 0px;
+                font-weight: bold; /* mettre en gras le texte */
+                font-size: 16px; /* texte de 16px de hauteur */
+            }
+            p.description{
+                text-align: center;
+                max-width: 400px; /* longueur max pour le paragraphe description */
+                display: inline-block; /* permet de centrer */
+                font-size: 14px;
+            }
+            .centre{ 
+                text-align: center;
+                width: 100%; /* permet de mettre à 100 % la photo */
+            }
+            div.categorie{
+                margin-bottom: 0px;
+                margin-top: 0px;
+                overflow: visible; /* permet de rendre visible recette */
+            }
+            div.separateur{
+                background-color: black;
+                height: 1px;
+                width: 100px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            div.info{
+                position: relative;
+
+            }
+            table.info{
+                position: absolute;
+                bottom: 0;
+                width: 100%;
+                color: white;
+                background-color: #6C8290C0;
+                height: 80px;
+
+            }
+            table.info td{
+                text-align: center;
+                font-size: 14px;
+                vertical-align: top;
+            }
+            table.info th{
+                font-size: 16px;
+                vertical-align: bottom; /* alignement vers le bas */
+                padding-bottom: 8px; /* espacement de 8px entre bas et text */
+            }
+            img.info{
+                display: block;
+                max-height: 400px;
+                object-fit: cover; /* permet de ne pas déformer l'image en cas d'agrandissement */
+                min-height: 200px;
+                background-color: lightgray;
+            }
+            div.colonne{
+                width: 45%;
+                margin-top: 20px;
+                
+            }
+            div.colonne h2{
+                text-align: center;
+                text-transform: uppercase;
+                font-size: 15px;
+                border-bottom: 5px solid #6C829D;
+                padding-bottom: 5px;
+
+            }
+            div.colonne1{
+                display: inline-block;
+                margin-right: 10%;
+
+            }
+            div.colonne2{
+                float: right;
+            }
+
+            div.ingredients p{
+                text-align: center;
+                border: 1px solid lightgray;
+                font-size: 14px;
+                margin-top: 5px;
+                margin-bottom: 0px;
+                padding: 8px 0;
+                
+            }
+            table.preparation p.numero{
+                background-color: #6C829D;
+                color: white;
+                height: 25px;
+                width: 25px;
+                text-align: center;
+                font-size: 14px;
+                font-weight: bold;
+                padding-top: 4px;
+                box-sizing: border-box; /* permet de garder la hauteur de la box à 25px après le padding top */
+                border-radius: 50%; /* on peut mettre des pixels pour arrondir les angles */
+                margin: 0;
+
+            }
+            table.preparation td{
+                vertical-align: top; /* permet de remonter les td en haut necessite le margin 0 pour les numeros */
+            }
+            table.preparation td.preparation_etape{
+                font-size: 14px;
+                padding-left: 10px;
+                padding-bottom: 10px;
+        
+            }
+            table.preparation tr{
+                height: 40px; /* règle la hauteur pour éviter les rapprochement an cas d'agrandissement de l'écran */
+            }
+
